@@ -67,7 +67,7 @@ public class LectureTest {
         ZipCodeWilmington zipCodeWilmington = new ZipCodeWilmington();
         for (Student student : students) {
             zipCodeWilmington.enroll(student);
-            Assert.assertEquals(0.0, student.getTotalStudyTime().doubleValue(), 0);
+            Assert.assertEquals(0.0, student.getTotalStudyTime(numberOfHours).doubleValue(), 0);
         }
 
         // when
@@ -75,7 +75,7 @@ public class LectureTest {
 
         // then
         for (Student student : students) {
-            Assert.assertEquals(student.getTotalStudyTime(), lectureTime, 0);
+            Assert.assertEquals(student.getTotalStudyTime(numberOfHours), lectureTime, 0);
         }
     }
 }

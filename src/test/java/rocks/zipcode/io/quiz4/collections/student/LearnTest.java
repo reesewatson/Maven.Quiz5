@@ -15,7 +15,7 @@ public class LearnTest {
 
         // when
         student.learn(expected);
-        Double actual = student.getTotalStudyTime();
+        Double actual = student.getTotalStudyTime(numberOfHours);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -28,7 +28,7 @@ public class LearnTest {
 
         // when
         student.learn(expected);
-        Double actual = student.getTotalStudyTime();
+        Double actual = student.getTotalStudyTime(numberOfHours);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -44,7 +44,7 @@ public class LearnTest {
         // when
         student.learn(firstLecture);
         student.learn(secondLecture);
-        Double actual = student.getTotalStudyTime();
+        Double actual = student.getTotalStudyTime(numberOfHours);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -61,7 +61,7 @@ public class LearnTest {
         // when
         student.learn(firstLecture);
         student.learn(secondLecture);
-        Double actual = student.getTotalStudyTime();
+        Double actual = student.getTotalStudyTime(numberOfHours);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -79,7 +79,7 @@ public class LearnTest {
         // when
         student.learn(firstLecture);
         student.learn(secondLecture);
-        Double actual = student.getTotalStudyTime();
+        Double actual = student.getTotalStudyTime(numberOfHours);
 
         // then
         Assert.assertEquals(expected, actual);

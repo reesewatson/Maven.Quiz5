@@ -44,7 +44,7 @@ public class GetStudyMapTest {
         // given
         ZipCodeWilmington zipCodeWilmington = new ZipCodeWilmington();
         Student expectedStudent1 = new Student();
-        Double expectedStudyTime1 = expectedStudent1.getTotalStudyTime();
+        Double expectedStudyTime1 = expectedStudent1.getTotalStudyTime(numberOfHours);
         zipCodeWilmington.enroll(expectedStudent1);
 
 
